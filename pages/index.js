@@ -6,13 +6,14 @@ import {data} from '../SpeakerData';
 
 const inter = Inter({ subsets: ['latin'] })
 
-function Session({title, room}) {
+function Session({session}) {
   
+  const {title, room} = session;
 
   return (
     <span className="session w-100">
                   {title}{" "}
-                  <strong>Room: {room}</strong>
+                  <strong>Room: {room.name}</strong>
                 </span>
   )
 }
@@ -20,7 +21,7 @@ function Session({title, room}) {
 function Sessions({ sessions }) {
     return (
       <div className="sessionBox card h-250">
-                <Session title={sessions[0].title} room={sessions[0].room.name} />
+                <Session session={sessions[0]} />
                 
          </div>
     ); 
