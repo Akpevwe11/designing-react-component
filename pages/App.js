@@ -1,4 +1,4 @@
-import {data} from '../SpeakerData';
+
 import SpeakersList from './SpeakersList';
 import Header from './Header';
 import SpeakersToolbar from './SpeakersToolbar';
@@ -15,7 +15,7 @@ import Speakers  from './Speakers';
        }>
         <Header theme={theme} />
         <Speakers 
-         data={data}
+      
          theme={theme}
          setTheme={setTheme} 
         />

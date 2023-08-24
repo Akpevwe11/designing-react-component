@@ -2,7 +2,7 @@ const { default: SpeakersList } = require("./SpeakersList");
 const { default: SpeakersToolbar } = require("./SpeakersToolbar");
 import { useState } from "react";
 
-function Speakers({data, theme, setTheme}) {
+function Speakers({theme, setTheme}) {
     const [showSessions, setShowSessions] = useState(true); 
     return (
         <>
@@ -11,7 +11,7 @@ function Speakers({data, theme, setTheme}) {
              showSessions={showSessions}
              setShowSessions={setShowSessions}
          />
-         <SpeakersList data={data}
+         <SpeakersList 
          showSessions={showSessions}
          setShowSessions={setShowSessions}
           />
